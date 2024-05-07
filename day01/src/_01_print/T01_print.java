@@ -1,4 +1,4 @@
-package day01;
+package _01_print;
 
 public class T01_print {
 
@@ -8,6 +8,9 @@ public class T01_print {
 		  여러줄 주석
 		  여러줄에 걸쳐 설명이나 특이사항들을 적을 때 사용
 		 */
+		// 단축키
+		// 의 단축키 :  ctrl + /
+		/* 의 단축키 :  ctrl + shift + /  */
 		
 		// 출력문 : println -> 출력후 줄바꿈
 //		문자열을 출력할 때는 반드시 쌍따옴표("")를 넣어준다
