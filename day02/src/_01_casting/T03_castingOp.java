@@ -41,7 +41,5 @@ public class T03_castingOp {
 		
 		double re2 = num1 / num2;
 		System.out.println(re2);
-
 	}
-
 }
