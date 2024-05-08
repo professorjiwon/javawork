@@ -15,7 +15,7 @@ public class T04_String {
 		 \" : 쌍따옴표 출력
 		 \\ : 역슬래시(\) 출력
 		*/
-		System.out.println("강의실 : 801호\n강좌명 : 의료용 디지털 영상 표준활용");
+		System.out.println("강의실 : 801호\n강좌명 : \"의료용 디지털 영상 표준활용\" ");
 		System.out.println("강의실 : 801호\t강좌명 : 의료용 디지털 영상 표준활용");
 
 		/*

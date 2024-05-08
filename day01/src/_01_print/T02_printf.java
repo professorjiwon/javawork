@@ -21,10 +21,10 @@ public class T02_printf {
 		System.out.printf("%f\n",3.55555555555);
 		
 		// 문자1개 출력
-		System.out.printf("%c\n", 'm');
+		System.out.printf("%c\n", 'a');
 		
 		// 문자열 출력
-		System.out.printf("%s\n", "abcdedf");
+		System.out.printf("%s\n", "abckdjs");
 		
 		// boolean타입 출력
 		System.out.printf("%b\n", true);
