@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class T04_ex01 {
 
 	public static void main(String[] args) {
-		/*
 		Scanner scan = new Scanner(System.in);
 		// 1. 
 		System.out.print("문자 1개 입력 : ");
@@ -27,7 +26,6 @@ public class T04_ex01 {
 		double avg = (double)sum / 3;
 		System.out.println("총점 : " + sum);
 		System.out.printf("평균 : %.2f\n", avg);
-		*/
 		
 		// 3.
 		int iNum1 = 10;

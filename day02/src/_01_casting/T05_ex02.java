@@ -7,7 +7,6 @@ public class T05_ex02 {
 	public static void main(String[] args) {
 		// 1.
 		Scanner scan = new Scanner(System.in);
-		/*
 		System.out.print("이름 입력 : ");
 		String name = scan.next();
 		System.out.print("성별 입력(남/여) : ");
@@ -41,7 +40,7 @@ public class T05_ex02 {
 		double cir = (width + height) * 2;
 		System.out.println("면적 : " + area);
 		System.out.println("둘렉 : " + cir);
-		*/
+
 		// 4.
 		System.out.print("문자열 입력 : ");
 		String str = scan.next();
