@@ -26,10 +26,11 @@ public class T05_threeOp {
 		String re3 = jumsu >= 80 ? "합격" : "불합격";
 		System.out.println(re3);
 
-		String re4 = jumsu >= 90 ? "A" : (jumsu >= 80 ? "B" : (jumsu >= 70 ? "C" : (jumsu >= 60 ? "D" : "F")));
-		System.out.println(re4);
-				   
-		
+		String re4 = 
+				jumsu >= 90 ? "A" : 
+				jumsu >= 80 ? "B" : 
+				jumsu >= 70 ? "C" : 
+				jumsu >= 60 ? "D" : "F";
+		System.out.println(re4);		 		
 	}
-
 }
