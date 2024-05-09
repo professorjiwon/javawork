@@ -20,7 +20,5 @@ public class T01_StringClass {
 		System.out.println("주소가 같은가? " + (str3 == str4));
 		
 		System.out.println("값이 같은가? " + str3.equals(str4));
-
 	}
-
 }

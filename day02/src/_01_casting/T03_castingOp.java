@@ -34,7 +34,7 @@ public class T03_castingOp {
 		*/
 		
 		num1 = 100;
-		num2 = 3;
+		num2 = 3;  
 		double re = (double)num1 / num2;
 		re = num1 / (double)num2;
 		re = (double)num1 / (double)num2;
