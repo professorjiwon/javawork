@@ -34,9 +34,8 @@ public class T01_assignment {
 		num1 %= 4;
 		System.out.println(num1);
 		
-		
-
-		
+		// 컴퓨터는 숫자로 인식. 사람이 보기 편하도록 함
+		int num3 = 300_000_000;
+		System.out.println(num3);
 	}
-
 }
