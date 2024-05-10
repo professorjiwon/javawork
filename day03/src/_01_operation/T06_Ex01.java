@@ -8,7 +8,6 @@ public class T06_Ex01 {
 		Scanner sc = new Scanner(System.in);
 		
 		// 1.
-		
 		System.out.print("정수 입력 : ");
 		int num1 = sc.nextInt();
 		

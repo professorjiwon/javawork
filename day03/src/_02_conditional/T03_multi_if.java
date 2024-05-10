@@ -8,7 +8,7 @@ public class T03_multi_if {
 		Scanner sc = new Scanner(System.in);
 		System.out.print("점수 입력 : ");
 		int score = sc.nextInt();
-		    
+		
 		if(score > 100)
 			System.out.println("100점이상은 넣을 수 없습니다");
 		else if(score >= 90) // 100~90
@@ -24,7 +24,7 @@ public class T03_multi_if {
 		else
 			System.out.println("점수는 음수가 될 수 없습니다.");
 		
-//	  ...,102,101,100     -1,-2,-3 ...
+//	  ...,103,102,101     -1,-2,-3 ...
 		if(score > 100 || score < 0)
 			System.out.println("점수를 잘못입력하였습니다");
 		else if(score >= 90) // 100~90

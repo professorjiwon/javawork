@@ -23,11 +23,10 @@ public class T01_if {
 			System.out.println("안녕");
 		}
 		
-		
 		int num2 = 95;
-		if(num1 < num2)
+		if(num1 < num2) {
 			System.out.println(num1 + "은 " + num2 + "보다 작다");
-		
+		}
 		System.out.println("if의 조건과 상관없이 실행");
 		
 		// 사용자로 부터 점수를 입력받아 80점 이상이면 합격입니다. 축하합니다

@@ -1,5 +1,7 @@
 package _02_repetitive;
 
+import java.util.Scanner;
+
 public class T02_overlap_for {
 
 	public static void main(String[] args) {
@@ -35,6 +37,7 @@ public class T02_overlap_for {
 		}
 		
 		// 사용자로 부터 숫자를 입력받아 별 출력
+		/*
 		ex) 숫자입력 : 5
 		*
 		**
@@ -47,6 +50,32 @@ public class T02_overlap_for {
 		**
 		***
 		****
+		*/
+		Scanner sc = new Scanner(System.in);
+		System.out.print("숫자 입력 : ");
+		int num = sc.nextInt();
+		
+		for(int i=1; i<=num; i++) {
+			for(int j=1; j<=i; j++) {
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+		
+		// 구구단 옆으로 출력하기
+		System.out.println(" 2단\t 3단\t 4단\t 5단\t 6단\t 7단\t 8단\t 9단");
+		for(int i=1; i<=9; i++) {
+			for(int dan=2; dan<=9; dan++) {
+				//System.out.print(dan + "*" + i + "=" + dan*i + "\t");
+				System.out.printf("%d*%d=%2d\t",dan,i,dan*i);
+			}
+			System.out.println();
+		}
 	}
-
 }
+
+
+
+
+
+
