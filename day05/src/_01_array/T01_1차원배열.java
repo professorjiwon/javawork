@@ -33,6 +33,5 @@ public class T01_1차원배열 {
 			arrayInt4[i] = i+1;
 			System.out.print(arrayInt4[i] + ", ");
 		}
-		
 	}
 }
