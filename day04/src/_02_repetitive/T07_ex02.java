@@ -70,11 +70,10 @@ public class T07_ex02 {
 		int count = 1;
 		while(true) {
 			int num = (int)(Math.random()*6) + 1;
+			System.out.println("(" + num + ")");
 			if(num == 6) {
-				System.out.println("(" + num + ")");
 				break;
 			}
-			System.out.println("(" + num + ")");
 			count++;
 		}
 		System.out.println("총 주사위 굴린 횟수는 : " + count);
