@@ -200,13 +200,5 @@ public class T06_ex02 {
 		}
 		System.out.println("최솟값 : " + min);
 		System.out.println("최대값 : " + max);
-		
-		
-		
-		
-		
-		
-		
 	}
-
 }
