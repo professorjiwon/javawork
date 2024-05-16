@@ -9,7 +9,8 @@ public class T01_main_tv {
 		System.out.println(tv1.inch + "인치");
 
 		tv1.power();
-		// System.out.println("tv상태 : " + tv1.power);
+		
+		//System.out.println("tv상태 : " + tv1.power);
 		System.out.println("현재 채널 : " + tv1.channelUp());
 		System.out.println("현재 채널 : " + tv1.channelUp());
 		System.out.println("현재 채널 : " + tv1.channelDown());

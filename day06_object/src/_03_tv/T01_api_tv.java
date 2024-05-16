@@ -5,7 +5,7 @@ public class T01_api_tv {
 	String model = "울트라 FULL HD";
 	int inch = 65;
 	int volume;		// 기본값 : 0
-	int channel = 1;
+	int channel = 2;
 	boolean power;  // 기본값 : false
 	
 	void power() {
