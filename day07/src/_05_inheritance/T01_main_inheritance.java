@@ -8,7 +8,7 @@ class B extends A{
 class C extends A{
 	int cc = 5000;
 }
-public class D extends C{
+class D extends C{
 	int dd = 30000;
 }
 public class T01_main_inheritance {
