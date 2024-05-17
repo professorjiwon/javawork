@@ -1,7 +1,7 @@
 package _02_constructor;
 
 public class T01_api_tv {
-	String company;
+	private String company;
 	String model;
 	int channel;
 	
