@@ -19,7 +19,6 @@ api :
         Cat(kind, color, feature) { }
         // 오버라이딩
         sound()
-        feature()
    Dog
    Frog
 main :     PetRun

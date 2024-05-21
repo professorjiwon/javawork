@@ -1,4 +1,4 @@
-package _01_polymorphosm;
+package _02_abstract;
 
 public class Dog extends Pet{
 	Dog() {
@@ -11,5 +11,9 @@ public class Dog extends Pet{
 	@Override
 	void sound() {
 		System.out.println("멍멍");
+	}
+	@Override
+	void info() {
+		System.out.println("종류 : " + super.getKind());	
 	}
 }
