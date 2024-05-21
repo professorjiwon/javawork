@@ -1,0 +1,23 @@
+   Pet
+     속성 : kind
+             color
+     메소드 :
+	Pet(kind, color) { } // 생성자
+	sound()
+	feature()  // 자랄견
+ 	getKind() // getter메소드
+	getColor()	
+	toString() {return  }   종류 : 비글, 색상 : 흰색
+	info() {출력문}    종류 : 불독, 색상 : 흰색
+   Cat
+        // 생성자 2개
+        Cat() { 
+	부모의 생성자에 값 넘겨주기
+        }
+        Cat(kind, color) { }
+        // 오버라이딩
+        sound()
+        feature()
+   Dog
+   Frog
+main :     PetRun
