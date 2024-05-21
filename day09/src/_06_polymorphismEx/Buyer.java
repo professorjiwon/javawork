@@ -25,3 +25,8 @@ public class Buyer {
 		System.out.println(p + "를 구입함");
 	}
 }
+
+
+
+
+
