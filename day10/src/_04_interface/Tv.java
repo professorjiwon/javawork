@@ -24,4 +24,10 @@ public class Tv implements RemoteControl{
 		
 		System.out.println("현재 음량 : " + this.volume);
 	}
+	
+	@Override
+	public void search(String msg) {
+		System.out.println("msg");
+	}
+
 }
