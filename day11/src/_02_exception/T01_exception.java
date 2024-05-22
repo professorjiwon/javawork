@@ -1,4 +1,4 @@
-package _03_exception;
+package _02_exception;
 
 public class T01_exception {
 	public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package _03_exception;
+package _02_exception;
 
 public class T03_nullPointer {
 
