@@ -3,11 +3,20 @@ class Card {
 	String kind;
 	int num;
 	Card() {
-		this("HART", 7);
+		this("HEART", 7);
 	}
 	Card(String kind, int num) {
+		this.kind = kind;
 		this.num = num;
 	}
+	
+	// toString 오버라이딩
+	/*
+	@Override
+	public String toString() {
+		return "" + kind + ", " + num;
+	}
+	*/
 }
 public class T03_toString {
 	public static void main(String[] args) {
