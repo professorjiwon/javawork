@@ -109,6 +109,15 @@ public class T05_cloneShallowDeepCopy {
 		c1.r = 50.0;
 		c1.p.x = 1000;
 		System.out.println("c1 : " + c1);
-		System.out.println("c3 : " + c3);		
+		System.out.println("c3 : " + c3);	
+		
+		// 배열에서의 clone은 기본으로 되어 있음
+		int[] num = {1,2,3};
+		int[] numClone = num.clone();
+		
+		numClone[0]=100;
+		
+		System.out.println(Arrays.toString(num));
+		System.out.println(Arrays.toString(numClone));
 	}
 }
