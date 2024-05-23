@@ -19,7 +19,5 @@ public class AccountRun {
 		} catch (UserException e) {
 			System.out.println(e.getMessage());
 		}
-
 	}
-
 }
