@@ -48,6 +48,15 @@ public class T03_Math {
 		
 		double re = Math.round(value2);
 		System.out.println(re/100);
+		System.out.println("--------------------------------");
+		
+		// 제곱연산
+		System.out.println("5의 3승 : " + (int)(Math.pow(5, 3)));
+		System.out.println("1024의 2승 : " + Math.pow(1024, 2));
+		
+		// 제곱근
+		System.out.println("25의 제곱근 : " + Math.sqrt(25));
+		System.out.println("--------------------------------");
 		
 		// random
 		double ran = Math.random()*100; // 0~ 99.9999999
