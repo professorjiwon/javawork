@@ -8,6 +8,7 @@ public class T09_split {
 		String text = "홍길동-아무개-이순신-강감찬";
 		String[] name = text.split("-");
 		System.out.println(Arrays.toString(name));
+		System.out.println(name[1]);
 		
 		String text2 = "홍길동-아무개/이순신,강감찬@이고잉";
 		String[] name2 = text2.split("-|/|,|@");

@@ -9,8 +9,6 @@ public class T10_substring {
 		
 		// substring(index,lastIndex) : 
 		//			문자열에서 index번호부터 lastIndex번호(포함안함) 이전까지 얻어옴
-		System.out.println(str.subSequence(7, 10));
-
+		System.out.println(str.substring(7, 10));
 	}
-
 }

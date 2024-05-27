@@ -1,6 +1,6 @@
-package _01_langPackage;
+/*package _01_langPackage;
 
-/*
+
 class Point implements Cloneable {
 	int x;
 	int y;
@@ -45,17 +45,18 @@ public class T04_clone {
 		System.out.println(p1);
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 */
-
-
-
-
-
-
-
-
-
-
-
-
-
