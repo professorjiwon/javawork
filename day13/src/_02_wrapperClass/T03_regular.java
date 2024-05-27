@@ -24,7 +24,5 @@ public class T03_regular {
 			System.out.println("정규식과 일치합니다");
 		else
 			System.out.println("정규식과 일치하지 않습니다");		                  
-
 	}
-
 }
