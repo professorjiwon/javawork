@@ -27,6 +27,22 @@ public class T03_ArrayList {
 		System.out.println(list);
 		System.out.println(list2);
 		
+		list.clear();
+		list2.clear();
+		for(int i=0; i<10; i++) {
+			list.add(i+1);
+		}
+		list2.add(7);
+		list2.add(3);
+		list2.add(12);
+		
+		// 문제. list2의 객체가 list에 들어 있으면 list2의 객체를 삭제. 출력
+		
+		for(int i=list2.size()-1; i>=0; i--) {
+			if(list.contains(list2.get(i)))
+				list2.remove(i);
+		}
+		System.out.println(list);
+		System.err.println(list2);
 	}
-
 }

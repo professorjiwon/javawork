@@ -42,25 +42,16 @@ public class T01_ArrayList {
 		list.remove(2);
 		list.remove("객체 모델링");
 		list.remove(list.get(0));
-		for(int i=0; i<list.size(); i++) {
-			System.out.println(i+1 + ". " + list.get(i));
-		}
-		System.out.println("------------------------");
+		System.out.println(list);
 		
 		list.add("java");
 		list.add("Database");
 		list.add("HTML");
-		for(int i=0; i<list.size(); i++) {
-			System.out.println(i+1 + ". " + list.get(i));
-		}
+		System.out.println(list);
 		System.out.println("------------------------");
 		
 		// set() : index자리에 기존것 삭제하고 들어감
 		list.set(2, "객체 모델링");
-		for(int i=0; i<list.size(); i++) {
-			System.out.println(i+1 + ". " + list.get(i));
-		}
-		
-		System.out.println(list.toString());
+		System.out.println(list);
 	}
 }
