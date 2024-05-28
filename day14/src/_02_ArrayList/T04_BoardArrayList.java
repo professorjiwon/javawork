@@ -16,7 +16,26 @@ public class T04_BoardArrayList {
 		
 		Board b2 = list.get(1);
 		System.out.println(b2.getTitle() + ", " + b2.getContent() + ", " + b2.getWriter());
-
+		System.out.println("------------------------------------");
+		
+		Board b3 = new Board();
+		b3.setTitle("title1");
+		b3.setContent("게시판 내용");
+		b3.setWriter("아무개");
+		
+		list.add(b3);
+		
+		for(int i=0; i<list.size(); i++) {
+			System.out.println(list.get(i).getTitle() + ", " + list.get(i).getContent() + ", " + list.get(i).getWriter());
+		}
+		for(Board b : list) {
+			System.out.println(b.getTitle()+ ", " + b.getContent() + ", " + b.getWriter());
+		}
+		System.out.println("------------------------------------");
+		
+		list.remove(2);
+		for(Board b : list) {
+			System.out.println(b.getTitle()+ ", " + b.getContent() + ", " + b.getWriter());
+		}
 	}
-
 }
