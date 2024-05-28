@@ -33,7 +33,7 @@ public class T01_StringBuffer {
 		System.out.println("sb1=" + sb1);
 		System.out.println("--------------------------------------");
 		
-		// insert(얼마큼떨어뜨려서, 문자열)
+		// insert(얼마큼떨어뜨려서(offset), 문자열)
 		sb1.insert(1, "java");
 		System.out.println("sb1=" + sb1);
 		System.out.println("--------------------------------------");
