@@ -29,8 +29,5 @@ public class T02_Stack {
 			Money money = monStack.pop();
 			System.out.println("꺼내온 금액 : " + money.getValue() + "원");
 		}
-		
-
 	}
-
 }
