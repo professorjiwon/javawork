@@ -1,0 +1,56 @@
+BookRun(Main)
+   bc(BookController)
+
+  // 사용자로부터 입력받아 해당하는 서비스 하기
+  void mainMenu() {
+      ******* 메인 메뉴 *******
+     1. 새 도서 추가
+     2. 도서 전체 조회
+     3. 도서 검색 조회
+     4. 도서 삭제
+     5. 도서 명 오름차순 정렬
+     9. 종료
+  }
+  //   1번을 선택했으면 호출
+  insertBook() {
+   사용자로부터 책정보 입력받아
+   BookController의 insertBook()에 값 넘겨주기
+  }
+
+  // 2번을 선택했으면 호출
+  listAll() {
+     BookController의 listAll()을 호출하여
+     책이 하나도 없으면
+       '책이 없습니다'
+     책이 있으면
+        목록 출력
+  }
+
+  // 3번을 선택했으면 호출
+  searchBook() {
+     책제목을 입력받아
+     BookController의 searchBook()을 호출하여 검색
+     책이 없으면
+        '검색하는 책이 없습니다'
+     있으면
+         책정보 출력
+  }
+
+  // 4번을 선택했으면 호출
+  deleteBook() {
+     책제목과 저자 입력받아
+     BookController의 deleteBook()을 호출하여 삭제
+     책이 없으면
+        '삭제할 도서를 찾지 못했습니다'
+     있으면
+         도서를 삭제하였습니다
+  }
+
+ // 5번을 선택했으면 호출
+  ascBook() {
+    BookController의 ascBook()호출하여
+    정렬이 되었으면
+       '정렬을 하였습니다'
+    아니면
+      '정렬에 실패했습니다'
+  } 

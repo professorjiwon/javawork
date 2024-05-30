@@ -1,0 +1,14 @@
+BookController
+   list(ArrayList<Book>)
+
+   생성자 {
+     list에 Book객체 4개 넣기 
+   } 
+
+   insertBook( ) : list맨 뒤에 넣기
+   listAll() : 리스트 목록 모두 보여주기
+   searchBook(title) : 책 검색하여 객체 리턴
+   deleteBook(title, author) : 책 제목과 저자가 맞으면 list에서 삭제. 삭제한 객체 리턴
+   ascBook() : 오름차순 정렬
+   
+   

@@ -18,12 +18,12 @@ class Member {
 		}
 		return false;
 	}
-
+	
 	@Override
 	public int hashCode() {
 		return name.hashCode()+age; 
 	}
-
+	
 }
 
 public class T03_HashSet {

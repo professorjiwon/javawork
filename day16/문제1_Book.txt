@@ -1,0 +1,20 @@
+Book
+  title(String)
+  author(String)
+  category(String) - 장르
+  int price(int) 
+ 
+  기본생성자
+  모든필드가 포함된 생성자
+  getter / setter
+
+  오버라이딩하기
+  toString
+  hashCode()
+  equals() - 가격기준
+  compareTo() - title
+
+
+
+	
+  
