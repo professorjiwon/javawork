@@ -56,6 +56,10 @@ public class T03_GenericsExtends {
 		appleBox.add(new Apple());		// Apple만 담을 수 있다
 		// appleBox.add(new Fruit());    부모 안됨
 		
-
+		tjoeunBox.add(new Tjoeun());	// Tjoeun만 담을 수 있다
+		
+		System.out.println(fruitBox);
+		System.out.println(appleBox);
+		System.out.println(tjoeunBox);
 	}
 }

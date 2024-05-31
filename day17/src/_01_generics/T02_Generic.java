@@ -10,7 +10,7 @@ class Delivery<T> {
 }
 class Gmarket<T> {  }
 
-public class T02_Generics {
+public class T02_Generic {
 	public static void main(String[] args) {
 		Delivery<String> del = new Delivery<>();
 		del.set("program");
