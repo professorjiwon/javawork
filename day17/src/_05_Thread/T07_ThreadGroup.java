@@ -20,6 +20,7 @@ public class T07_ThreadGroup {
 			}
 		};
 		// Thread(ThreadGroup tg, Runnable r, String name)
+		Thread th4 = new Thread(r);
 		Thread th1 = new Thread(grp1, r, "th1");
 		Thread th2 = new Thread(subGrp1, r, "th2");
 		Thread th3 = new Thread(grp2, r, "th3");

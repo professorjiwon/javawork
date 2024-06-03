@@ -21,7 +21,9 @@ class PThread2 extends Thread {
 }
 
 public class T06_ThreadPriority {
+	static int num;
 	public static void main(String[] args) {
+		
 		PThread pt1 = new PThread();
 		PThread2 pt2 = new PThread2();
 		
