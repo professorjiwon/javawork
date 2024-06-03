@@ -14,12 +14,25 @@ public class T02_Function {
 	);
 	
 	// 평균 출력 메서드
-	// 반환형 double (ToIntFunction )
+	static double avg(ToIntFunction<Student> function) {
+		int sum = 0;
+		for(Student student : list) {
+			sum += function.applyAsInt(student);
+		}
+		double avg = (double)sum / list.size();
+		return avg;
+	}
 
-	
 	public static void main(String[] args) {
-		//영어평균 출력
+		double engAvg = avg(t -> t.getEng());
+		System.out.printf("[영어 평균 점수] = %.2f\n", engAvg);
 		
-		//컴퓨터평균 출력
+		double comAvg = avg(t -> t.getCom());
+		System.out.printf("[컴퓨터 평균 점수] = %.2f", comAvg);
 	}
 }
+
+
+
+
+
