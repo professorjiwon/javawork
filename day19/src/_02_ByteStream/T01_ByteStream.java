@@ -22,7 +22,9 @@ public class T01_ByteStream {
 		     - 보조 스트림 : 보조 역할을 하는 통로(속도를 빠르게 한다거나, 그외 유용한 기능제공 해줌)
 		     			   단독 사용불가 => 반드시 기반스트림이 있어야 사용가능	
 		 */
-
+		ByteStreamApi stapi = new ByteStreamApi();
+		// stapi.fileSave();
+		stapi.fileRead();
 	}
 
 }
