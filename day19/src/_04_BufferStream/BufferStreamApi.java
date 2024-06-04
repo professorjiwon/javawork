@@ -69,6 +69,11 @@ public class BufferStreamApi {
 			e.printStackTrace();
 		}
 	}
+	
+	// 입력버퍼
+	
+	
+	
 }
 
 
