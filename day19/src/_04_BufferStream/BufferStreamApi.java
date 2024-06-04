@@ -71,17 +71,27 @@ public class BufferStreamApi {
 	}
 	
 	// 입력버퍼
-	
-	
-	
+	void fileRead() {
+		try(BufferedReader br = new BufferedReader(new FileReader("file_buffer.txt"))) {
+			/*
+			System.out.println((char)br.read());
+			// readLine() : 1줄단위로 읽어오는 메소드
+			System.out.println(br.readLine());
+			System.out.println(br.readLine());
+			System.out.println(br.readLine());
+			System.out.println(br.readLine());
+			System.out.println(br.readLine());
+			*/
+			String value = null;
+			while((value = br.readLine()) != null)
+				System.out.println(value);
+			
+			int value2 = 0;
+			while((value2 = br.read()) != -1)
+				System.out.println((char)value2);
+			
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
 }
-
-
-
-
-
-
-
-
-
-
