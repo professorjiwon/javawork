@@ -5,7 +5,7 @@ import java.util.function.*;
 public class T01_consumer {
 
 	public static void main(String[] args) {
-		/*  Consumer의 원형 : 미래 구현되어 있음
+		/*  Consumer의 원형 : 미리 구현되어 있음
 		@FunctionalInterface
 		public interface Consumer<T> {
 			void accept(T t);

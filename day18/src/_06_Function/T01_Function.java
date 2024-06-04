@@ -13,7 +13,7 @@ public class T01_Function {
 	// 출력메소드
 	static void printString(Function<Student, String> function) {
 		for(Student student : list) {
-			System.out.println(function.apply(student) + " ");
+			System.out.println(function.apply(student));
 		}
 		System.out.println();
 	}
@@ -33,6 +33,6 @@ public class T01_Function {
 		printInt(t -> t.getEng());
 		
 		System.out.println("[컴퓨터 점수]");
-		printInt(a -> a.getCom());
+		printInt(t -> t.getCom());
 	}
 }
