@@ -1,4 +1,4 @@
-package _06_Network;
+package _07_Socket;
 
 import java.io.BufferedReader;
 import java.io.IOException;

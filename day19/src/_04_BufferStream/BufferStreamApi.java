@@ -24,10 +24,10 @@ public class BufferStreamApi {
 		try {
 			
 			// 1.
-			//fw = new FileWriter("file_buffer.txt");
+			// fw = new FileWriter("file_buffer.txt");
 			
 			// 2.
-			//BufferedWriter bw = new BufferedWriter(fw);
+			// bw = new BufferedWriter(fw);
 			
 			// 한줄로
 			bw = new BufferedWriter(new FileWriter("file_buffer.txt"));
@@ -85,11 +85,11 @@ public class BufferStreamApi {
 			String value = null;
 			while((value = br.readLine()) != null)
 				System.out.println(value);
-			
+			/*
 			int value2 = 0;
 			while((value2 = br.read()) != -1)
 				System.out.println((char)value2);
-			
+			*/
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

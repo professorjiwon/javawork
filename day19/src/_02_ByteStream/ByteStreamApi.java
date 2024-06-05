@@ -7,8 +7,8 @@ import java.io.IOException;
 
 public class ByteStreamApi {
 	/*
-	 xxxInputStream : xxx매체로 부터 데이터를 입력받는 통료(외부매체로부터 데이터를 읽어온다)
-	 xxxOutputStream : xxx매체로로 데이터를 출력하는 통로(외부매체로 데이터를 내보낸다. 쓴다)
+	 xxxInputStream : xxx매체로 부터 데이터를 입력받는 통로(외부매체로부터 데이터를 읽어온다)
+	 xxxOutputStream : xxx매체로 데이터를 출력하는 통로(외부매체로 데이터를 내보낸다. 쓴다)
 	 */
 	
 	// 외부매체 파일에 출력을 한다. 데이터를 파일로 내보내기. 즉 파일로 저장
