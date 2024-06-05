@@ -11,38 +11,35 @@ import java.util.Scanner;
 
 public class ClientProgram {
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		BufferedReader br = null;
-		PrintWriter pw = null;		
-		Socket socket = null;
 		try {
-			String serverIp = InetAddress.getLocalHost().getHostAddress();
+			Scanner sc = new Scanner(System.in);
 			int port = 9001;
-
-			socket = new Socket(serverIp, port);
-			br = new BufferedReader(new InputStreamReader(socket.getInputStream()));
-			pw = new PrintWriter(socket.getOutputStream());
-			System.out.println(br.readLine());
 			
-			while(true) {
-				System.out.print("클라이언트 : ");
-				pw.println(sc.nextLine());
-				pw.flush();
+			String serverIp = InetAddress.getLocalHost().getHostAddress();
+
+			try(Socket socket = new Socket(serverIp, port);
+				BufferedReader br = new BufferedReader(new InputStreamReader(socket.getInputStream()));
+				PrintWriter pw = new PrintWriter(socket.getOutputStream())) {
 				
-				System.out.println("서버 : " + br.readLine());
+				System.out.println(br.readLine());
+				
+				while(true) {
+					System.out.print("클라이언트 : ");
+					String sendMsg = sc.nextLine();
+					pw.println(sendMsg);
+					pw.flush();
+					
+					System.out.println("서버 : " + br.readLine());
+					
+					if(sendMsg.equals("exit"))
+						break;
+				}
+				System.out.println("서버와 연결 해제함");
 			}
 		} catch (UnknownHostException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
 			e.printStackTrace();
-		} finally {
-			try {
-				pw.close();
-				br.close();
-				socket.close();
-			} catch (IOException e) {
-				e.printStackTrace();
-			}
 		}
 	}
 }
