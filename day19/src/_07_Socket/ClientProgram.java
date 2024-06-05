@@ -28,11 +28,11 @@ public class ClientProgram {
 					String sendMsg = sc.nextLine();
 					pw.println(sendMsg);
 					pw.flush();
-					
-					System.out.println("서버 : " + br.readLine());
-					
+
 					if(sendMsg.equals("exit"))
 						break;
+					
+					System.out.println("서버 : " + br.readLine());
 				}
 				System.out.println("서버와 연결 해제함");
 			}
