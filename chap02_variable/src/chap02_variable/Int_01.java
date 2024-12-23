@@ -40,7 +40,7 @@ public class Int_01 {
 		number2= 8;
 		
 		int sum = number+number2;
-		System.out.println(number + "+" + number2 + "=" + number+number2);
+		System.out.println(number + "+" + number2 + "=" + (number+number2));
 		System.out.println(number + "+" + number2 + "=" + sum);
 		
 		// 새로운 저장공간 만들기(기존에 있던 저장공간과 동일이름 안됨)
