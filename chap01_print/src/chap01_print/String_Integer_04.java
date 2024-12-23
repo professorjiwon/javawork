@@ -10,13 +10,12 @@ public class String_Integer_04 {
 		System.out.println("5+3=" + 5 + 3);
 		// 문자열 뒤에 숫자로 인식하게 하고 싶은면 소괄호안에 넣어준다
 		System.out.println("5+3=" + (5+3));
+		
 		// 오류 : +,-는 문자열로 인식. -는 정의되어 있지 않음 
 		// System.out.println("5-3=" + 5-3);
 		
 		// +와-를 제외한 연산자는 그냥 연산자로 인식하여 소괄호를 안해줘도 됨
 		System.out.println("5*3=" + 5*3);
 		System.out.println("5/3=" + 5/3);
-
 	}
-
 }
