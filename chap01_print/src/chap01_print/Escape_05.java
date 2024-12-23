@@ -16,5 +16,4 @@ public class Escape_05 {
 		System.out.print("인포에서 얘기했습니다. \"결석은 안됩니다.\"라고 했습니다\n");
 		System.out.print("java책 \\ 김지원저");
 	}
-
 }
