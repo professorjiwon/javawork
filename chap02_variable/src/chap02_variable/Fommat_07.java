@@ -46,5 +46,8 @@ public class Fommat_07 {
 		System.out.println("10진수 77을 2진수로 변환 : " + a2);
 		System.out.println("10진수 77을 8진수로 변환 : " + a8);
 		System.out.println("10진수 77을 16진수로 변환 : " + a16);
+		
+		System.out.format("%X\n", 10);
+		System.out.format("%x\n", 10);
 	}
 }
