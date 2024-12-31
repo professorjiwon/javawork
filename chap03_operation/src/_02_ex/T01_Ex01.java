@@ -6,7 +6,6 @@ public class T01_Ex01 {
 
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
-		/*
 		// 1.
 		System.out.print("정수 입력 : ");
 		int num1 = scan.nextInt();
@@ -114,7 +113,6 @@ public class T01_Ex01 {
 		
 		boolean re9 = num10 <= num8 || num10 > num9;
 		System.out.println(re9);
-		*/
 		
 		// 10.
 		System.out.print("3개의 정수 입력 : ");
