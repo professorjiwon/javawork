@@ -17,7 +17,7 @@ public class Promotion_01 {
 		double d1 = int1;
 		System.out.println(d1);
 		
-		d1 = s1+1;
+		d1 = s1 + 1;
 		System.out.println(d1);
 	}
 }

@@ -30,7 +30,7 @@ public class T02_increase {
 		
 		num = 10;
 		num2 = 10;
-		result = num++ + num2++;
+		result = num++ + ++num2;
 		System.out.println(result);
 		
 		num = 10;

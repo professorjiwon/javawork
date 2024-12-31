@@ -1,4 +1,4 @@
-package chap02_variable;
+package chap02_variable01;
 
 public class Etc_02 {
 

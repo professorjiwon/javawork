@@ -1,4 +1,4 @@
-package chap02_ex;
+package chap02_ex03;
 
 public class Ex01 {
 

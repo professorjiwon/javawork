@@ -1,5 +1,5 @@
-package chap02_variable;
-import java.util.*;
+package chap02_variable01;
+import java.util.Scanner;
 
 public class Report_08 {
 

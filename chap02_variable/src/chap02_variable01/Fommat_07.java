@@ -1,4 +1,4 @@
-package chap02_variable;
+package chap02_variable01;
 
 public class Fommat_07 {
 
@@ -7,7 +7,7 @@ public class Fommat_07 {
 		// java에서 실수형은  double이 기본자료형
 		// 실수형 숫자를 그냥 쓰면  double형으로 인식
 		float f1 = 0.10f;
-		double d1 = 134234.23456789345;
+		double d1 = 1.23456789345;
 		System.out.printf("%d, %d, %d\n", 10, 5, 1);
 		System.out.printf("%f\n", 1.23456789);
 		System.out.printf("%f\n", f1);
@@ -27,9 +27,9 @@ public class Fommat_07 {
 		System.out.printf("%.8s\n", url);  // 왼쪽에서 8글자만 출력
 		System.out.println("---------------------------");
 		
-		int octNum = 010;   // 십진수 : 8
-		int hexNum = 0x10;  // 십진수 : 16
-		int binNum = 0b10;  // 십진수 : 2
+		int octNum = 010;   // 8진수 -> 십진수로 8
+		int hexNum = 0x10;  // 16진수 -> 십진수로 16
+		int binNum = 0b10;  // 2진수 -> 십진수로 2
 		
 		System.out.printf("8진수=%o은 10진수=%d\n", octNum,  octNum);
 		System.out.printf("16진수=%x은 10진수=%d\n", hexNum, hexNum);

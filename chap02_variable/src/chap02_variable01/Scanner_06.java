@@ -1,4 +1,4 @@
-package chap02_variable;
+package chap02_variable01;
 
 import java.util.Scanner;
 
@@ -6,7 +6,7 @@ public class Scanner_06 {
 	public static void main(String[] args) {
 		
 		Scanner scan = new Scanner(System.in);
-		/*
+	/*
 		// 사용자에게 무엇을 해야되는지 써주는것이 좋다
 		System.out.print("정수 입력 : ");
 		// 정수형으로 받을때 nextInt()
