@@ -47,7 +47,7 @@ public class T02_if_else {
 			System.out.println("홀수");
 		
 		/*
-		if(num2 % 2 == 1 || num2 % 2 == -1)  // 음수일때는 나머지는 -1
+		if(num2 % 2 == 1 || num2 % 2 == -1)  // 음수일때 나머지는 -1
 			System.out.println("홀수");
 		else
 			System.out.println("짝수");
