@@ -1,4 +1,4 @@
-package _03_repetitive;
+package _02_repetitive;
 
 import java.util.Scanner;
 

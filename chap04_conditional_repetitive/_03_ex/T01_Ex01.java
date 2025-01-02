@@ -1,8 +1,8 @@
-package _02_ex;
+package _03_ex;
 
 import java.util.Scanner;
 
-public class T01_Ex1 {
+public class T01_Ex01 {
 
 	public static void main(String[] args) {
 		
