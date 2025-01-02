@@ -29,7 +29,7 @@ public class T03_multi_if {
 			System.out.println("A학점");
 		else if(score >= 80) // 89~80
 			System.out.println("B학점");
-		else if(score >= 70)
+		else if(score >= 70)  // 79~70
 			System.out.println("C학점");
 		else if(score >= 60)
 			System.out.println("D학점");

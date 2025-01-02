@@ -12,7 +12,7 @@ public class T02_if_else {
 		 	조건식이 거짓일 때 실행할 구문
 		 }
 		 */
-		int score = 65;
+		int score = 85;
 		if(score >= 70) {
 			System.out.println("축하합니다");
 			System.out.println("합격입니다");

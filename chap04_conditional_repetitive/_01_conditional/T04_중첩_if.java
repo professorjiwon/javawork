@@ -20,7 +20,7 @@ public class T04_중첩_if {
 		 }
 		 */
 		
-		int num1 = 64;
+		int num1 = 300;
 		if(num1 > 100) {  // 100보다 큰 모든 수
 			if(num1 > 200) {	// 200보다 큰 모든수
 				System.out.println("200보다 큰 숫자");
