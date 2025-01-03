@@ -14,7 +14,7 @@ public class T01_string {
 		
 		String str1 = new String("홍길동");
 		String str2 = new String("홍길동");
-		System.out.println("주소가 같은가?" + str1==str2);
+		System.out.println("주소가 같은가?" + (str1==str2));
 		System.out.println("그안의 값이 같은가?" + str2.equals(str1));
 		
 		Scanner sc = new Scanner(System.in);

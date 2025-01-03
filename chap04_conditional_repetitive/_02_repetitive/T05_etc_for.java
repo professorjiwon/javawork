@@ -44,11 +44,11 @@ public class T05_etc_for {
 		
 		outer : for(int dan=2; dan<=9; dan++) {
 			inner : for(int i=1; i<=9; i++) {
-				for(int z=1; z<=5; z++) {
-					System.out.println(dan + ", " + i + ", " + z);
-					if(z==3)
-						break inner;
-				}
+						for(int z=1; z<=5; z++) {
+							System.out.println(dan + ", " + i + ", " + z);
+							if(z==3)
+								break inner;
+						}
 			}
 			System.out.println("inner for문 종료");
 		}
