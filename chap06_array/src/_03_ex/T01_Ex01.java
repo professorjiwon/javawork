@@ -1,5 +1,6 @@
 package _03_ex;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class T01_Ex01 {
@@ -25,7 +26,6 @@ public class T01_Ex01 {
 
 		// 3.
 		Scanner sc = new Scanner(System.in);
-		/*
 		System.out.print("배열의 갯수 입력 : ");
 		int arrCount = sc.nextInt();
 
@@ -43,9 +43,6 @@ public class T01_Ex01 {
 		System.out.println();
 		
 		// 5.
-		문자열을 입력 받아 문자 하나하나를 배열에 넣고,
-		   검색할 문자가 문자열에 몇 개 들어가 있는지
-		   개수와 몇 번째 인덱스에 위치하는지 인덱스를 출력
 		System.out.print("문자열 입력 : ");
 		String str1 = sc.next();
 		System.out.print("찾을 문자 입력 : ");
@@ -87,7 +84,7 @@ public class T01_Ex01 {
 			System.out.println();
 			System.out.println(search + " 개수 : " + count);
 			System.out.println();
-		
+		*/
 
 		// 6.
 		char[] days = { '월', '화', '수', '목', '금', '토', '일' };
@@ -168,25 +165,23 @@ public class T01_Ex01 {
 		int bubble[] = {68, 15, 35, 57, 23, 4};
 
 		for(int i=0; i<bubble.length-1; i++) {   // 라운드 돌기
-			boolean flag = false;
+			boolean flag2 = false;
 			for(int j=0; j<bubble.length-i-1; j++) {  // 배열 안에 돌기 
 				if(bubble[j] > bubble[j+1]) {
 					int tmp = bubble[j];
 					bubble[j] = bubble[j+1];
 					bubble[j+1] = tmp;
-					flag = true;
+					flag2 = true;
 				}
 			}
-			if(!flag) {
+			if(!flag2) {
 				break;
 			}
 		}
 		
 		System.out.println(Arrays.toString(bubble));
-		*/
-		
-		// 12.
 
+		// 12.
 		int score[][] = {{95, 100, 78},
 						 {63, 97, 85},
 						 {68, 57, 100},
@@ -204,13 +199,13 @@ public class T01_Ex01 {
 			engSum += score[i][1];
 			mathSum += score[i][2];
 			
-			int sum = 0;
+			int sum2 = 0;
 			System.out.print(" " + (i+1) + "\t");
 			for(int j=0; j<score[i].length; j++) {   // 열
-				sum += score[i][j];
+				sum2 += score[i][j];
 				System.out.print(score[i][j] + "\t");
 			}
-			System.out.printf("%d\t%.1f\n", sum, (double)sum/score[i].length);
+			System.out.printf("%d\t%.1f\n", sum2, (double)sum2/score[i].length);
 		}
 		
 		System.out.println("----------------------------------------------");
