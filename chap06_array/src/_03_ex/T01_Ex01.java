@@ -1,6 +1,5 @@
 package _03_ex;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class T01_Ex01 {
@@ -163,14 +162,14 @@ public class T01_Ex01 {
 		else
 			System.out.println(menu + "치킨은 없는 메뉴입니다");
 		System.out.println();
-		*/
+		
 		
 		// 11.  버블정렬
 		int bubble[] = {68, 15, 35, 57, 23, 4};
 
-		for(int i=0; i<bubble.length-1; i++) {
+		for(int i=0; i<bubble.length-1; i++) {   // 라운드 돌기
 			boolean flag = false;
-			for(int j=0; j<bubble.length-i-1; j++) {
+			for(int j=0; j<bubble.length-i-1; j++) {  // 배열 안에 돌기 
 				if(bubble[j] > bubble[j+1]) {
 					int tmp = bubble[j];
 					bubble[j] = bubble[j+1];
@@ -184,34 +183,38 @@ public class T01_Ex01 {
 		}
 		
 		System.out.println(Arrays.toString(bubble));
+		*/
 		
-		
-		
-				
-				
-				
-				
-				
-				
-				
-				
-				
+		// 12.
 
+		int score[][] = {{95, 100, 78},
+						 {63, 97, 85},
+						 {68, 57, 100},
+						 {85, 84, 69},
+						 {86, 74, 39}};
+ 		
+		System.out.println("번호\t국어\t영어\t수학\t총점\t평균");	
+		System.out.println("----------------------------------------------");
+
+		int korSum = 0;
+		int engSum = 0;
+		int mathSum = 0;
+		for(int i=0; i<score.length; i++) {  // 행
+			korSum += score[i][0];
+			engSum += score[i][1];
+			mathSum += score[i][2];
+			
+			int sum = 0;
+			System.out.print(" " + (i+1) + "\t");
+			for(int j=0; j<score[i].length; j++) {   // 열
+				sum += score[i][j];
+				System.out.print(score[i][j] + "\t");
+			}
+			System.out.printf("%d\t%.1f\n", sum, (double)sum/score[i].length);
+		}
+		
+		System.out.println("----------------------------------------------");
+		System.out.println("총점\t" + korSum + "\t" + engSum + "\t" + mathSum);
+		System.out.printf("평균\t%.1f\t%.1f\t%.1f\n", korSum/(double)5, engSum/(double)5, mathSum/(double)5);
 	}
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
