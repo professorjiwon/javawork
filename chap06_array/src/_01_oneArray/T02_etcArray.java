@@ -36,6 +36,7 @@ public class T02_etcArray {
 		// 별도 Arrays라는 클래스에 미리 프로그램 해 놓음
 		// toString(배열) : 그 안의 값들을 모두 돌면서 출력
 		System.out.println(Arrays.toString(sArr2));
+	
 		System.out.println(Arrays.toString(dArr));
 	}
 }

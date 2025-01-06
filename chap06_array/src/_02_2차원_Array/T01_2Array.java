@@ -16,7 +16,7 @@ public class T01_2Array {
 		System.out.println(score2[0][1]);	// 2출력
 		
 		for(int row=0; row<score2.length; row++) {
-			for(int column=0; column<score2[row].length; column++) {
+			for(int column=0; column<5; column++) {
 				System.out.print(score2[row][column] + " ");
 			}
 			System.out.println();

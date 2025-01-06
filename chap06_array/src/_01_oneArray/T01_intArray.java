@@ -30,11 +30,13 @@ public class T01_intArray {
 		System.out.println("index번호 0번의 값 : " + arrayInt3[0]);
 		
 		System.out.println("----------------------------");
+
 		for(int i=0; i<5; i++) {
 			System.out.println(arrayInt3[i]);
 		}		
 		
 		System.out.println("----------------------------");
+
 		for(int i=0; i<5; i++) {
 			arrayInt3[i] = i*2;
 			System.out.println(arrayInt3[i]);
@@ -63,6 +65,7 @@ public class T01_intArray {
 		 */
 		
 		int[] num = new int[5];
+		
 		int sum1 = 0;
 		for(int i=0; i<num.length; i++) {
 			num[i] = i*3;
