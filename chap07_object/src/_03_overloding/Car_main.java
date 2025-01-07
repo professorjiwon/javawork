@@ -1,4 +1,4 @@
-package _05_overloding;
+package _03_overloding;
 
 public class Car_main {
 
@@ -13,9 +13,6 @@ public class Car_main {
 		System.out.println(car1.add("홍길동"));
 		
 		System.out.println(car1.add(5, 4.567));
-		
-		
-
 	}
 
 }

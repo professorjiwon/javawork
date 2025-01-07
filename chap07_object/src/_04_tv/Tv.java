@@ -1,4 +1,4 @@
-package _03_tv;
+package _04_tv;
 
 public class Tv {
 	// 속성 정의

@@ -1,4 +1,4 @@
-package _04_constructor;
+package _05_constructor;
 // 생성자
 // - 객체가 만들어 질 때 딱 한번 호출
 
@@ -7,7 +7,7 @@ public class Tv {
 	String model;
 	int inch;
 	
-	// 기본 생성자
+	// 생성자 overloading
 	Tv() {
 		System.out.println("기본 생성자 호출");
 	}

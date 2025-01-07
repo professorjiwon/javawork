@@ -1,4 +1,4 @@
-package _04_constructor;
+package _05_constructor;
 
 public class Tv2 {
 	String company;

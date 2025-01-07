@@ -1,4 +1,4 @@
-package _05_overloding;
+package _03_overloding;
 
 /*
  * 오버로딩의 조건
@@ -15,9 +15,9 @@ public class Car {
 	int add(int x) {
 		return x;
 	}
-//	int add(int x, int y) {
-//		return x+y;
-//	}
+	int add(int x, int y) {
+		return x+y;
+	}
 	String add(String name) {
 		return "이름 : " + name;
 	}
