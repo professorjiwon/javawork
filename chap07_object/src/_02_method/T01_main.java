@@ -16,7 +16,7 @@ public class T01_main {
 		
 		System.out.println(m1.print4());
 		
-		m1.print5(10);
+		m1.print5(8);
 		
 		int sum = m1.print6(3, 10);
 		System.out.println(sum);
@@ -34,17 +34,10 @@ public class T01_main {
 		int result2 = op.minus(987, 45);
 		System.out.println(result2);
 		
+		System.out.println(op.multiply(5, 7));
+		
+		System.out.println(op.remainder(7, 5));
+		
 		System.out.printf("%.1f", op.divide(7, 3));
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 	}
-
 }
