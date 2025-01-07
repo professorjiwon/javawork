@@ -1,0 +1,15 @@
+class    Phone_main
+class    Phone(부모)
+	속성 : model
+	        color
+	생성자(model, color)
+	void bell()
+	void hangUp()
+	void sendVoice(message)
+	void receveVoice(message)
+	void hangOut()
+
+class    SmartPhone(자식)
+	오류는 알아서 해결
+	String search(search)
+
