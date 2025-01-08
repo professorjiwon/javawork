@@ -1,6 +1,7 @@
 package _02_car;
 
 public class Ambulance extends Car {
+
 	Ambulance(String model, String company) {
 		super(model, company);  // super : 부모의 생성자 호출
 	}
