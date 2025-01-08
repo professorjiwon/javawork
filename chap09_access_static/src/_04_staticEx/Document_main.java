@@ -1,4 +1,4 @@
-package _04_document;
+package _04_staticEx;
 
 public class Document_main {
 
