@@ -6,5 +6,6 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="src" path="src"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/chap08_inheritance"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
