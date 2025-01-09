@@ -1,5 +1,6 @@
 Book API
-   속성 : 	title
+   속성(모두 private)		 
+	title
 	author
 	price
 	publisher
