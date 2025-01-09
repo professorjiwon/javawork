@@ -12,7 +12,6 @@ public class Book_main2 {
 		Book book3 = null;
 
 		for(int i=0; i<3; i++) {
-			
 			System.out.print("책 제목 입력 : ");
 			String title = sc.next();
 			System.out.print("책 저자 입력 : ");
