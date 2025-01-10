@@ -11,7 +11,8 @@ api :
 	getColor()	
 	getFeature()
 	// 오버라이딩
-	toString() {return  }   종류 : 비글, 색상 : 흰색
+	toString() {return  }   종류 : 비글, 색상 : 흰색, 특징 : 지랄견
+	info() {출력문}    종류 : 비글, 색상 : 흰색
    Cat
         // 생성자 2개
         Cat() { 매개변수3개인 생성자에 값 넘겨주기}
