@@ -1,4 +1,4 @@
-package _03_ex;
+package _02_abstractPhone;
 
 public class Phone_main {
 
@@ -20,5 +20,19 @@ public class Phone_main {
 		SmartPhone sp1 = new SmartPhone("LG", "검정");
 		System.out.println(sp1.model);
 		System.out.println(sp1.color);
+		System.out.println("----------------------");
+		
+		FolderPhone fp = new FolderPhone();
+		System.out.println(fp.model);
+		System.out.println(fp.color);
+		
+		fp.bell();
+		fp.hangUp();
+		fp.sendVoice("여보세요 더조은씨 바꿔주세요");
+		fp.receveVoice("네 접니다");
+		fp.sendVoice("수고하세요");
+		fp.receveVoice("네");
+		fp.hangOut();		
+		System.out.println("----------------------");
 	}
 }

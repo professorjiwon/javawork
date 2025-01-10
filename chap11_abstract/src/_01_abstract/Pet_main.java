@@ -1,4 +1,4 @@
-package _05_ex;
+package _01_abstract;
 
 public class Pet_main {
 
