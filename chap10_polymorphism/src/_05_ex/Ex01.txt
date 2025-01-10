@@ -6,21 +6,23 @@ api :
      생성자 : Pet(kind, color, feature) { }
      메소드 :
 	sound()
+	info() {출력문}    종류 : 비글, 색상 : 흰색
 	// getter메소드
  	getKind() 
 	getColor()	
 	getFeature()
 	// 오버라이딩
 	toString() {return  }   종류 : 비글, 색상 : 흰색, 특징 : 지랄견
-	info() {출력문}    종류 : 비글, 색상 : 흰색
-   Cat
+
+   Cat (Pet상속)
         // 생성자 2개
         Cat() { 매개변수3개인 생성자에 값 넘겨주기}
         Cat(kind, color, feature) { }
         // 오버라이딩
         sound()
-   Dog
-   Frog
+   Dog (Pet상속)
+   Frog (Pet상속)
+
 main :     PetRun
   Pet pet1 = new Cat()
   Pet pet2 = new Cog()
