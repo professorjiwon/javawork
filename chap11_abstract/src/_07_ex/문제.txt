@@ -1,6 +1,6 @@
 package : _07_ex
 문1. 
-interface  product
+interface  Product
 	메서드 : 전원 켜고 끄기 
 	볼륨 매개변수로 받아서 올리고 내리기
 
