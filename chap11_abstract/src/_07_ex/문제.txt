@@ -1,0 +1,23 @@
+package : _07_ex
+문1. 
+interface  product
+	메서드 : 전원 켜고 끄기 
+	볼륨 매개변수로 받아서 올리고 내리기
+
+class : Tv  (product상속)
+         채널 매개변수로 받아서 올리고 내리기
+
+class : Game  (product상속)
+	다른게임으로 전환하기
+
+class : product_main
+      - 실행해 보기
+
+문2.  위의 문1의 파일에서 추가하기
+interface  product
+     * 나중에 추가하는 메소드
+	- AI와 대화할 수 있는 메소드 : 구현부 있음. 오버라이딩 안됨
+	- 검색할 수 있는 메소드 : 구현부 있음. 오버라이딩 가능
+
+class : Tv  (product상속)
+	검색할 수 있는 메소드 오버라이딩 하기
