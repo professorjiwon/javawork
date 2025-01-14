@@ -33,13 +33,14 @@ public class T09_multiCatch {
 		} catch(ArithmeticException ae) {
 			System.out.println("0으로 나눌 수 없습니다");
 			ae.printStackTrace();  // 호출스택에 있는 메서드 정보와 예외 메시지 화면 출력
-			System.out.println("예외 메시지 : " + ae.getMessage());  // 예외클래스 인스턴스에 저장된 메시지 출력
-			
+			System.out.println("예외 메시지 : " + ae.getMessage());  // 예외클래스 인스턴스에 저장된 메시지 출력	
 		} catch(InputMismatchException im) {
 			System.out.println("정수만 입력 가능");
 		} catch(Exception e) {  // Exception은 가장 상위 부모 : 모든 예외는 다 처리
 			// 맨 마지막에 써야 됨
 			System.out.println("예외 발생");
 		}
+		
+		
 	}
 }

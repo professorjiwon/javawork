@@ -1,5 +1,6 @@
 package _02_userException;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Bank_main {
@@ -14,12 +15,31 @@ public class Bank_main {
 		try {
 			int money = sc.nextInt();
 			bank.withdraw(money);
+		} catch(UserException e) {
+			System.out.println(e.getMessage());
+		} catch(InputMismatchException e) {
+			System.out.println("정수만 입력 가능");
+		}
+		
+		/*
+		try {
+			int money = sc.nextInt();
+			bank.withdraw(money);
 		} catch (UserException e) {
 			System.out.println(e.getMessage());
 		} catch(Exception e) {
 			System.out.println("예외 발생");
 		}
-
+		*/
+		
+		/*
+		try {
+			int money = sc.nextInt();
+			bank.withdraw(money);
+		} catch(Exception e) {
+			System.out.println(e.getMessage());
+		}
+		*/
 	}
 
 }
