@@ -18,11 +18,12 @@ class Equals2 {
 	public boolean equals(Object obj) {
 		return value == ((Equals2)obj).value;
 	}
-
+	
 	@Override
 	public int hashCode() {
 		return Objects.hash(value);  
 	}
+		
 }
 
 public class T02_hashcode {

@@ -24,8 +24,9 @@ class Point implements Cloneable{
 		this.y = y;
 	}
 	
-	/*
+
 	// return의 자료형이 Object클래스 사용할 때는 형변환을 계속 해줘야 한다.
+	/*
 	@Override
 	public Object clone() {
 		Object obj = null;
@@ -47,6 +48,7 @@ class Point implements Cloneable{
 		} catch (CloneNotSupportedException e) {
 			e.printStackTrace();
 		}
+		
 		// 참조형 변수도 새롭게 만들어서 객체의 주소가 다른 주소가 들어가야 된다
 		A b = a;
 		a = new A();
@@ -65,6 +67,7 @@ public class T04_clone {
 	public static void main(String[] args) {
 		Point original = new Point(3, 4);
 		Point copy = original.clone();
+		
 		copy.a.num = 100;
 		
 		System.out.println(original.a.num);

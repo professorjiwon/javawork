@@ -12,7 +12,6 @@ package _02_StringMethod;
 	lastIndexOf(char, fromIndex) : fromIndex번호부터 앞으로 가면서 글자가 있나 확인후 index번호 반환
 	lastIndexOf(String) : 뒤에서 부터 문자열의 시작 index번호 반환
 	lastIndexOf(String, fromIndex) : fromIndex번호부터 앞으로 가면서 문자열이 있나 확인후 index번호 반환
-	
 */
 public class T06_indexOf {
 

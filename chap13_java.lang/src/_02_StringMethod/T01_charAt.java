@@ -13,7 +13,5 @@ public class T01_charAt {
 			case '2': case '4':
 				System.out.println("여자");
 		}
-
 	}
-
 }
