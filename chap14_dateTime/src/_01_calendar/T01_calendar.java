@@ -65,7 +65,7 @@ public class T01_calendar {
 				System.out.print("0");
 			}
 		} else {
-			System.out.print("시간 : PM ");
+			System.out.print("시간 : PM ");	
 			if(today.get(Calendar.HOUR) < 10) {
 				System.out.print("0");
 			}

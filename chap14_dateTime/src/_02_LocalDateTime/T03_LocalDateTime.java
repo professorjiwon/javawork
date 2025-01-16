@@ -1,7 +1,9 @@
 package _02_LocalDateTime;
 
+import java.time.Duration;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.time.temporal.ChronoUnit;
 
 public class T03_LocalDateTime {
 
@@ -23,5 +25,25 @@ public class T03_LocalDateTime {
 		} else if(today.isEqual(endDay)) {
 			System.out.println("오늘은 수업 종료날");
 		}
+		System.out.println("----------------------------------------");
+		
+		Duration duration = Duration.between(startDay, endDay);
+		System.out.println(duration.getSeconds());
+		System.out.println("----------------------------------------");
+		System.out.println("종료일까지 " + today.until(endDay, ChronoUnit.MONTHS) + "개월 남음");
+		System.out.println("종료일까지 " + today.until(endDay, ChronoUnit.DAYS) + "일 남음");
+		System.out.println("종료일까지 " + today.until(endDay, ChronoUnit.HOURS) + "시간 남음");
+		
+		System.out.println("수업일 : " + startDay.until(endDay, ChronoUnit.DAYS) + "일");
+		System.out.println("----------------------------------------");
+		
+		System.out.println(today.plusYears(3).format(dtf));
+		System.out.println(today.plusMonths(5).format(dtf));
+		System.out.println(today.plusDays(100).format(dtf));
+		System.out.println("----------------------------------------");
+		
+		System.out.println(today.minusYears(5).format(dtf));
+		System.out.println(today.minusMonths(5).format(dtf));
+		System.out.println(today.minusDays(100).format(dtf));
 	}
 }
