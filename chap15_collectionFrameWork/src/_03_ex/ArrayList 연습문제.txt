@@ -31,7 +31,7 @@ api class :
 
    LibraryController
       속성 :
-		member (Member를 객체 생성하여 필드에 저장)
+		member (Member 객체를 저장하는 필드)
 		ArrayList<Book> aList 객체 생성
      생성자 :
 		Member 객체를 매개변수로 받는 생성자 {
@@ -43,6 +43,9 @@ api class :
 			aList.add(  )
 			aList.add(  )
 			aList.add(  )
+		}
+		void insertBook(Book book) {
+			받은 book을 aList에 추가
 		}
 		ArrayList<Book> selectAll() {
 			return aList;
