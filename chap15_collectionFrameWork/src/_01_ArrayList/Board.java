@@ -5,10 +5,10 @@ public class Board {
 	private String writer;
 	private int price;
 	
-	public Board() {
+	Board() {
 	}
 	
-	public Board(String subject, String writer, int price) {
+	Board(String subject, String writer, int price) {
 		this.subject = subject;
 		this.writer = writer;
 		this.price = price;
