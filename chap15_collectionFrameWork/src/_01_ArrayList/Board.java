@@ -3,15 +3,15 @@ package _01_ArrayList;
 public class Board {
 	private String subject;
 	private String writer;
-	private int price;
+	private String content;
 	
 	Board() {
 	}
 	
-	Board(String subject, String writer, int price) {
+	Board(String subject, String writer, String content) {
 		this.subject = subject;
 		this.writer = writer;
-		this.price = price;
+		this.content = content;
 	}
 
 	public String getSubject() {
@@ -30,16 +30,16 @@ public class Board {
 		this.writer = writer;
 	}
 
-	public int getPrice() {
-		return price;
+	public String getContent() {
+		return content;
 	}
 
-	public void setPrice(int price) {
-		this.price = price;
+	public void setContent(String content) {
+		this.content = content;
 	}
 
 	@Override
 	public String toString() {
-		return "제목 : " + subject + ", 글쓴이 : " + writer + ", 가격 : " + price;
+		return "제목 : " + subject + ", 글쓴이 : " + writer + ", 가격 : " + content;
 	}
 }

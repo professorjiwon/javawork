@@ -28,7 +28,5 @@ public class T01_LinkedList {
 		
 		list.removeLast();	// 맨 뒤의 노드 삭제
 		System.out.println(list);
-
 	}
-
 }
