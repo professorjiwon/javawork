@@ -24,6 +24,7 @@ public class T01_ArrayList {
 	public static void main(String[] args) {
 		// ArrayList<String> list = new ArrayList<>();
 		List<String> list = new ArrayList<>();
+		
 		// 배열에 넣을 때 : add()
 		list.add("java");
 		list.add("oracle");
@@ -33,6 +34,7 @@ public class T01_ArrayList {
 		System.out.println("총 객체수 : " + size);
 		
 		list.add(2, "css");
+		
 		// 얻어올때 : get(index번호) 사용. list[index] -> 안됨
 		System.out.println("index2번 : " + list.get(2));  
 		System.out.println("-------------------------");

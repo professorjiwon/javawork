@@ -13,6 +13,8 @@ public class T05_BoardVector {
 		
 		list.remove(1);
 		
+		Board board = list.get(1);
+		
 		for(Board b : list) {
 			System.out.println(b);
 		}
