@@ -11,11 +11,11 @@ class Person  implements Comparable<Person> {
 		this.name = name;
 		this.age = age;
 	}
-	
+
 	@Override
-	public int compareTo(Person o) {
-		if(age < o.age) return -1;
-		else if(age == o.age) return 0;
+	public int compareTo(Person p) {
+		if(age < p.age) return -1;
+		else if(age == p.age) return 0;
 		else return 1;
 	}
 	
@@ -29,20 +29,17 @@ class Person  implements Comparable<Person> {
 public class T01_Comparable {
 	public static void main(String[] args) {
 		TreeSet<Person> treeset = new TreeSet<>();
+		
 		treeset.add(new Person("홍길동", 25));
 		treeset.add(new Person("김자바", 35));
 		treeset.add(new Person("나자바", 27));
 		
 		System.out.println(treeset);  // 사용시 toString() 오버라이딩.
-	
+		
 		Iterator<Person> iterator = treeset.iterator();
 		while(iterator.hasNext()) {
 			Person p = iterator.next();
 			System.out.println(p.name + ":" + p.age);
 		}
-		
-		
 	}
 }
-
-

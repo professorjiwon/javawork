@@ -1,0 +1,15 @@
+package : _09_ex
+class : 
+     Fruit
+	name
+	price
+
+	생성자(모든 필드)
+
+     Descending
+
+     Comparator_main
+	TreeSet 객체 생성
+	add-3개
+	출력
+
