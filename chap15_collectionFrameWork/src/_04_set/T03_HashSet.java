@@ -27,20 +27,29 @@ class Member {
 	public int hashCode() {
 		return name.hashCode() + age;
 	}
+
 }
 
 public class T03_HashSet {
 	public static void main(String[] args) {
 		Set<Member> set = new HashSet<>();
+		Member member1 = new Member("홍길동", 20);
+		Member member2 = new Member("홍길동", 20);
+		Member member3 = new Member("아무개", 30);
+		Member member4 = new Member("아무개", 30);
 		
-		set.add(new Member("홍길동", 20));
+		set.add(member1);
 		set.add(new Member("오로라", 23));
-		set.add(new Member("홍길동", 20));
-		set.add(new Member("아무개", 30));
+		set.add(member2);
+		set.add(member3);
 		set.add(new Member("이순신", 60));
-		set.add(new Member("아무개", 30));
+		set.add(member4);
+		
+		System.out.println(member1.equals(member2));
+		System.out.println(member3.equals(member4));
 		
 		System.out.println("총 객체 수 : " + set.size());
+		
 		
 		Iterator<Member> iter = set.iterator();
 		iterPrint(iter);

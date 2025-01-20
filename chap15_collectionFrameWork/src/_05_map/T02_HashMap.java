@@ -36,7 +36,6 @@ public class T02_HashMap {
 			System.out.println("존재하지 않는 id입니다");
 		}
 		
-		
 		/*
 		boolean flag = false;
 		while(true) {

@@ -30,6 +30,6 @@ public class Snack {
 
 	@Override
 	public String toString() {
-		return "Snack [flavor=" + flavor + ", calory=" + calory + "]";
+		return "[flavor=" + flavor + ", calory=" + calory + "]";
 	}
 }

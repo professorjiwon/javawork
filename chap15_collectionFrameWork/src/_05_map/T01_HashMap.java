@@ -14,7 +14,7 @@ public class T01_HashMap {
 		map.put("홍길동", 87);
 		map.put("동장군", 98);
 		map.put("이동지", 67);
-		map.put("박하지", 79);
+		map.put("박하지", 84);
 		System.out.println("총 entry 수 : " + map.size());
 		
 		// 객체 얻어오기 : get(key)
