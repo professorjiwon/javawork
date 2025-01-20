@@ -6,7 +6,6 @@ import java.util.Comparator;
 // Comparable 인터페이스의 compareTo()가 오버라이딩 되어있는 상태에서 사용
 // 내림차순 정렬 api만들기
 class Descending implements Comparator {
-
 	@Override
 	public int compare(Object o1, Object o2) {
 		if(o1 instanceof Comparable && o2 instanceof Comparable) {
@@ -33,7 +32,5 @@ public class T02_Comparator {
 		
 		Arrays.sort(strArr, new Descending());
 		System.out.println("strArr=" + Arrays.toString(strArr));
-
 	}
-
 }

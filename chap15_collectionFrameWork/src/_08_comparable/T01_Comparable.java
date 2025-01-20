@@ -28,7 +28,7 @@ class Person  implements Comparable<Person> {
 
 public class T01_Comparable {
 	public static void main(String[] args) {
-		TreeSet<Person> treeset = new TreeSet<>();
+		TreeSet<Person> treeset = new TreeSet<Person>();
 		
 		treeset.add(new Person("홍길동", 25));
 		treeset.add(new Person("김자바", 35));
