@@ -18,7 +18,7 @@ api class :
 		    title가 같으면 true반환
 		    다르면 false반환 
 		hashCode()
-			가격으로 해시코드 만들기
+			title로 해시코드 만들기
 		compareTo(Book book) {
 			this.getTile().compareTo(book.getTitle())
 		}
