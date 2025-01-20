@@ -10,7 +10,7 @@ api class :
 			인스턴스 변수에 넣기
 		}
       메소드 :
-		etter / getter 메소드
+		setter / getter 메소드
       오버라이딩 : 
         toString()
 		    제목 : title, 저자 : author, 출판사 : publisher

@@ -1,6 +1,8 @@
 package _10_ex;
 
-public class Book {
+import java.util.Objects;
+
+public class Book implements Comparable<Book>{
 	private String title;
 	private String author;
 	private String publisher;
@@ -41,5 +43,23 @@ public class Book {
 	@Override
 	public String toString() {
 		return "제목 : " + title + "/저자 : " + author + "/출판사 : " + publisher;
+	}
+	
+	@Override
+	public boolean equals(Object obj) {
+		if(obj instanceof Book)
+			return title.equals(((Book)obj).title);
+		else
+			return false;
+	}
+	
+	@Override
+	public int hashCode() {
+		return Objects.hash(title);
+	}
+
+	@Override
+	public int compareTo(Book o) {	
+		return title.compareTo(o.getTitle());
 	}
 }

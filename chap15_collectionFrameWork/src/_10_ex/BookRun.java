@@ -5,9 +5,6 @@ public class BookRun {
 	public static void main(String[] args) {
 		LibraryController lc = new LibraryController();
 		
-		lc.insertBook();
-		System.out.println(lc.selectAll());
-		
 		lc.insertBook(new Book("springBoot", "박봄이", "위키북스"));
 		System.out.println(lc.selectAll());
 		
