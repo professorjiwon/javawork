@@ -10,6 +10,7 @@ public class BookMenu {
 	public void menu() {
 		int select;
 		do {
+			System.out.println();
 			System.out.println("*********** 메뉴 ***********");
 			System.out.println("1. 새 도서 추가");
 			System.out.println("2. 전체 도서 조회");
@@ -17,8 +18,7 @@ public class BookMenu {
 			System.out.println("4. 도서 삭제");
 			System.out.println("5. 도서명 오름차순 정렬");
 			System.out.println("0. 종료");
-			System.out.println("-------------------------");
-			System.out.print("메뉴 번호 선택 : ");
+			System.out.print("- 메뉴 번호 선택 : ");
 			select = sc.nextInt();
 			
 			switch(select) {
@@ -38,7 +38,7 @@ public class BookMenu {
 				ascBook();
 				break;			
 			case 0:
-				System.out.println();
+				System.out.println("도서 프로그램을 종료합니다.");
 				return;
 			default :
 				System.out.println("잘못 선택했습니다. 다시 선택해 주세요");
@@ -47,28 +47,64 @@ public class BookMenu {
 	}
 	
 	void insertBook() {
+		System.out.println("===== 추가할 도서 입력 =====");
+		System.out.print("도서명 : ");
+		String title = sc.next();
+		System.out.print("저자명 : ");
+		String author = sc.next();
+		System.out.print("출판사명 : ");
+		String publisher = sc.next();
 		
+		lc.insertBook(new Book(title, author, publisher));
 	}
 	
-	ArrayList<Book> selectList() {
-		ArrayList<Book> list = new ArrayList<>();
-		
-		return list; 
+	void selectList() {
+		ArrayList<Book> list = lc.selectAll();
+		System.out.println("===== 도서 전체 목록 조회 =====");
+		if(list.isEmpty()) {
+			System.out.println("도서가 없습니다");
+		} else {
+			for(Book book : list) {
+				System.out.println("\t" + book);
+			}
+		}
 	}
 	
-	ArrayList<Book> searchBook() {
-		ArrayList<Book> list = new ArrayList<>();
+	void searchBook() {
+		System.out.println("===== 도서 검색 =====");
+		System.out.print("검색 키워드 입력 : ");
+		String keyword = sc.next();
 		
-		return list;
+		ArrayList<Book> list = lc.searchBook(keyword);
+		if(list.isEmpty()) {
+			System.out.println("검색 결과가 도서가 없습니다");
+		} else {
+			for(Book book : list) {
+				System.out.println("\t" + book);
+			}
+		}
 	}
 	
-	Book deleteBook() {
-		Book book = null;
+	void deleteBook() {
+		System.out.println("===== 도서 삭제 =====");
+		System.out.print("삭제할 도서명 입력 : ");
+		String title = sc.next();
+		System.out.print("삭제할 저자명 입력 : ");
+		String author = sc.next();
 		
-		return book;
+		if(lc.deleteBook(title, author) == null) {
+			System.out.println("삭제할 도서가 없습니다.");
+		} else {
+			System.out.println("성공적으로 삭제되었습니다.");
+		}
 	}
 	
-	int ascBook() {
-		return 1;
+	void ascBook() {
+		int result = lc.ascBook();
+		if(result == 1) {
+			System.out.println("정렬에 성공하였습니다.");
+		} else {
+			System.out.println("정렬에 실패하였습니다.");
+		}
 	}
 }
