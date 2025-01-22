@@ -1,6 +1,5 @@
 package _01_generic;
-/*
-class Box {
+class Box5 {
 	private Object obj;
 	public Object getObj() {
 		return obj;
@@ -10,27 +9,29 @@ class Box {
 	}
 }
 
-class Apple {
+class Apple5 {
 	int num = 10;
 }
 
 class Banana {
 	boolean bool = true;
 }
+
 public class T01_NonGeneric {
 	public static void main(String[] args) {
-		Box box = new Box();
+
+		Box5 box = new Box5();
 		box.setObj("홍길동");
 		Object obj = box.getObj();
 		System.out.println(obj);  // String클래스는 toString을 오버라이딩 해놓은 상태
 		
-		box.setObj(new Apple());
-		Apple obj2 = (Apple)box.getObj();
+		box.setObj(new Apple5());
+		Apple5 obj2 = (Apple5)box.getObj();
 		System.out.println(obj2.num);
 		
 		box.setObj(new Banana());
 		Banana b = (Banana)box.getObj();
 		System.out.println(b.bool);
+		
 	}
 }
-*/

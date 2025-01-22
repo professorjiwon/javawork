@@ -6,6 +6,12 @@ public class T02_Join_main {
 		SumThread sumTh = new SumThread();
 		sumTh.start();
 		
+		try {
+			sumTh.join();
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		
 		System.out.println("1~1000까지 합 : " + sumTh.getSum());
 	}
 }
