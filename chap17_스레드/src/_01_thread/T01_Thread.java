@@ -25,8 +25,7 @@ class Thread2 implements Runnable {
 public class T01_Thread {
 	public static void main(String[] args) {
 		Thread1 t1 = new Thread1();
-		
-		
+				
 		Runnable r = new Thread2();
 		Thread t2 = new Thread(r);  // 생성자 : Thread(Runnable r)
 		
